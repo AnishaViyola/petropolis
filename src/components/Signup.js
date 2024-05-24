@@ -149,7 +149,7 @@ export const Signup = () =>
    
            
             
-            <div className="bg-white w-[60%] h-[85%] absolute top-[25%] left-[20%] shadow-black shadow-2xl rounded-[50px]">
+            <div className="bg-black w-[60%] h-[85%] absolute top-[25%] left-[20%] shadow-black shadow-2xl rounded-[50px]">
             <p className=" ml-[20%] text-2xl animate-bounce"><b>SIGN-IN</b> </p>
                <img src={signupimg} className="absolute top-[0%] left-[45%] w-[55%] h-[100%] rounded-[50px]"/>
                <div id="hubspotForm" className="w-[30%] absolute top-[13%] left-[5%]">
