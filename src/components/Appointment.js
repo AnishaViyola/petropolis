@@ -126,12 +126,11 @@ export const Appointment = () => {
       </ul>
 
       </div>
-      <div className="absolute top-[265%] left-[0%] bg-gray-100 h-[130%] w-[100%] p-[5%]" id="petdetails">
+      <div className="absolute top-[265%] left-[0%] bg-gray-100 h-[130%] w-[100%] p-[3%]" id="petdetails">
        <center><p className="text-5xl text-gray-600"><b>Add Pet Details</b> </p></center>
        
-       <div id="hubspotForm" className="w-[40%] absolute top-[20%] left-[30%]">
+       <div id="hubspotForm" className="w-[40%] absolute top-[15%] left-[30%]">
     </div>
-    <button  type="submit" value="book" className="text-2xl bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 p-[15px] rounded-[10px] absolute top-[75%] left-[50%]" onClick={routeChange}>Book Groomer</button>
       {/* <form>
       <select className="bg-gray-400 w-[15%] p-[15px] rounded-[15px] mt-[8%]" required>
         <option value="choose your pet" selected disabled>choose your pet</option>

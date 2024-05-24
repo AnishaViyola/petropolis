@@ -132,14 +132,25 @@ export const Signup = () =>
 
 
         return (
-        <body className="  h-screen bg-gradient-to-r from-[#74b3ec] to-pink-300 ">
+        <div>
+           <div className="w-full bg-[#266D81] h-[135px] gap-[90px] p-[75px] flex justify-end text-xl">
+    
+    <Link className="no-underline hover:text-orange-300  text-white" to='/'>Home</Link>
+    <Link className="no-underline  hover:text-orange-300  text-white"  to='/About'>About us</Link>
+    <Link className="no-underline  hover:text-orange-300  text-white" to='/Guidelines'>Guidelines</Link>
+    <Link className="no-underline  hover:text-orange-300  text-white" to='/Appointment'>Appointment</Link>
+    <Link className="no-underline  hover:text-orange-300  text-white" to='/Login'>Login</Link>
+    <img src={loggo2} className="absolute left-0 top-[3%] w-[15%] h-[18%]"/>
+    </div>
+       
           
-         <center><p className="p-6 text-4xl animate-bounce"><b>SIGN-IN</b> </p></center> 
+         
     
    
            
             
-            <div className="bg-white w-[60%] h-[85%] absolute top-[13%] left-[20%] shadow-black shadow-2xl rounded-[50px]">
+            <div className="bg-white w-[60%] h-[85%] absolute top-[25%] left-[20%] shadow-black shadow-2xl rounded-[50px]">
+            <p className=" ml-[20%] text-2xl animate-bounce"><b>SIGN-IN</b> </p>
                <img src={signupimg} className="absolute top-[0%] left-[45%] w-[55%] h-[100%] rounded-[50px]"/>
                <div id="hubspotForm" className="w-[30%] absolute top-[13%] left-[5%]">
     </div>
@@ -152,11 +163,10 @@ export const Signup = () =>
                 <p className="absolute top-[69%] left-[5%]  text-red-600">{Ferrors.password}</p>
                  <input type="text" name="phoneno"  placeholder="Enter phoneno." values={formData.phoneno} className="absolute top-[78%] placeholder-black left-[5%] border-black border-b-2 p-[20px] w-[28%]" onChange={handleChange}></input>
                  <p className="absolute top-[90%] left-[5%]  text-red-600">{Ferrors.phoneno}</p> */}
-              <button type="submit" className="absolute top-[90%]  left-[35%] bg-[#5f9ea0]  p-[10px] w-[80px] border-none rounded-[40px] shadow-lg shadow-black" value="sub" name="subbtn" ><b>signup</b></button>
               
               {/* </form> */}
             </div>
-            <footer className="bg-black h-[445px] w-[100%] absolute top-[100%] left-0 ">
+            <footer className="bg-black h-[445px] w-[100%] absolute top-[112%] left-0 ">
    <h1 className="text-white ml-[5%] mt-[5%] text-4xl">Contact Us</h1> 
    <p className="text-white text-2xl ml-[5%] mt-[2%]">
     Call :+91-2378956490<br/><br/>
@@ -167,7 +177,8 @@ export const Signup = () =>
     <img src={twit} className="absolute top-[40%] left-[70%]"/>
     <p className="ml-[35%] mt-[5%] text-white text-2xl">&copy 2024 petropolis All rights reserved</p>
     </footer>
-        </body>);
+        </div>
+        );
     }
 
 
