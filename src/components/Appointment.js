@@ -6,6 +6,7 @@ import facebook from './facebook.png';
 import insta from './insta.png';
 import twit from './twit.png';
 import { useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
 
 
 
@@ -16,6 +17,52 @@ export const Appointment = () => {
     let path = '/Bookappointment'; 
     navigate(path);
   }
+
+    useEffect(() => {
+              
+      const existingScript = document.querySelector(`script[src="//js.hsforms.net/forms/embed/v2.js"]`);
+  
+      if (!existingScript) {
+        const script = document.createElement('script');
+        script.src = '//js.hsforms.net/forms/embed/v2.js';
+        script.type = 'text/javascript';
+        script.charset = 'utf-8';
+        script.async = true;
+  
+        script.onload = () => {
+          if (window.hbspt) {
+            window.hbspt.forms.create({
+              region: 'na1',
+              portalId: '46242923',
+              formId: 'a76e043a-028b-43dd-9ba2-65d9bae2c3e9',
+              target: '#hubspotForm'
+            });
+          }
+        };
+  
+        document.body.appendChild(script);
+      } else {
+        // Script already exists, just create the form
+        if (window.hbspt) {
+          window.hbspt.forms.create({
+            region: 'na1',
+            portalId: '46242923',
+            formId: 'a76e043a-028b-43dd-9ba2-65d9bae2c3e9',
+            target: '#hubspotForm'
+          });
+        }
+      }
+  
+      // Cleanup function
+      return () => {
+        const formContainer = document.querySelector('#hubspotForm');
+        if (formContainer) {
+          formContainer.innerHTML = '';
+        }
+      };
+    }, []);             
+                 
+  
   return (
     <div>
 
@@ -79,9 +126,13 @@ export const Appointment = () => {
       </ul>
 
       </div>
-      <div className="absolute top-[265%] left-[0%] bg-gray-100 h-[95%] w-[100%] p-[5%]" id="petdetails">
+      <div className="absolute top-[265%] left-[0%] bg-gray-100 h-[130%] w-[100%] p-[5%]" id="petdetails">
        <center><p className="text-5xl text-gray-600"><b>Add Pet Details</b> </p></center>
-      <form>
+       
+       <div id="hubspotForm" className="w-[40%] absolute top-[20%] left-[30%]">
+    </div>
+    <button  type="submit" value="book" className="text-2xl bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 p-[15px] rounded-[10px] absolute top-[75%] left-[50%]" onClick={routeChange}>Book Groomer</button>
+      {/* <form>
       <select className="bg-gray-400 w-[15%] p-[15px] rounded-[15px] mt-[8%]" required>
         <option value="choose your pet" selected disabled>choose your pet</option>
         <option value="cat">cat</option>
@@ -112,10 +163,12 @@ export const Appointment = () => {
         <option value="trans-fur-mation">trans-fur-mation</option></select><br/><br/><br/><br/>
       <button  type="submit" value="book" className="text-2xl bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 p-[15px] rounded-[10px]" onClick={routeChange}>Book Groomer</button></center>
       
-      </form>
+      </form> */}
+     
+
       </div>
     </div>
-    <footer className="bg-black h-[445px] w-[100%] absolute top-[365%] left-0 ">
+    <footer className="bg-black h-[445px] w-[100%] absolute top-[395%] left-0 ">
    <h1 className="text-white ml-[5%] mt-[5%] text-4xl">Contact Us</h1> 
    <p className="text-white text-2xl ml-[5%] mt-[2%]">
     Call :+91-2378956490<br/><br/>

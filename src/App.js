@@ -6,6 +6,8 @@ import { Appointment } from './components/Appointment'
 import { Login } from './components/Login'
 import { Signup } from './components/Signup'
 import { Bookappointment } from './components/Bookappointment'
+
+
 function App() {
   
   return (
@@ -22,7 +24,7 @@ function App() {
      <Route path='Login' element={<Login />}></Route>
     <Route path='Signup' element={<Signup />}></Route>
     <Route path='Bookappointment' element={<Bookappointment />}></Route>
-
+    
     </Routes>
     
   </>
