@@ -1,5 +1,6 @@
 import loggo2 from './loggo2.png';
 import anim2 from './anim2.gif';
+import petadv from './petadv.png';
 import dog1 from './dog1.png';
 import dog2 from './dog2.png';
 import dog3 from './dog3.png';
@@ -31,7 +32,8 @@ export const  Homee = () =>
     <Link className="no-underline  hover:text-orange-300  text-white" to='/Login'>Login</Link>
    
     <img src={loggo2} className="absolute left-0 top-[3%] w-[15%] h-[18%]"/>
-    <img src={anim2} className="absolute top-[21%] left-[0%] w-[100%] h-[87%]"/>
+    {/* <img src={anim2} className="absolute top-[21%] left-[0%] w-[100%] h-[87%]"/> */}
+    <img src={petadv} className="absolute top-[21%] left-[0%] w-[100%] h-[87%]"></img>
     <h1 className="absolute left-[43%] top-[113%] text-black text-5xl animate-bounce"><b>Latest Buzz</b></h1>
     <img src={dog1} className="absolute top-[125%] left-[4%] w-[20%] h-[45%] rounded-3xl"/>
     <p className="absolute left-[4%] top-[170%] text-black "><b className="text-2xl">Expert Tips:Pet Parenting 101<br/></b>
