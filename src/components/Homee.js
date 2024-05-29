@@ -23,7 +23,7 @@ export const  Homee = () =>
           }
     return(
     <div>
-    <div className="w-full bg-[#266D81] h-[135px] gap-[100px] p-[75px] flex justify-end text-xl">
+    <div className="w-full bg-[#266D81] h-[135px] gap-[100px] p-[75px] flex justify-end text-xl ">
     
     <Link className="no-underline hover:text-orange-300  text-white " to='/'>Home</Link>
     <Link className="no-underline  hover:text-orange-300  text-white"  to='/About'>About us</Link>
@@ -53,7 +53,7 @@ export const  Homee = () =>
         <p className="ml-[-2%]">Pampering Paws, One Fur at a Time!!</p></h1>
     <button value="shop now" name="shopbox" className="rounded-full hover:opacity-70 bg-orange-500 p-[23px] text-white absolute top-[70%] left-[45%]" onClick={routeChange2}><b className="text-2xl">book now</b></button>
     </div>
-</div>
+    </div>
 <footer className="bg-black h-[445px] w-[100%] absolute top-[280%] left-0 ">
    <h1 className="text-white ml-[5%] mt-[5%] text-4xl">Contact Us</h1> 
    <p className="text-white text-2xl ml-[5%] mt-[2%]">

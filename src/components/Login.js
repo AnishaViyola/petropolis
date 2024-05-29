@@ -71,8 +71,8 @@ export const Login = () =>
         <img src={loggo2} className="absolute left-0 top-[3%] w-[15%] h-[18%]"/>
         </div>
            
-        <div className="bg-gradient-to-r from-[#FE8484] to-[#99EDC3] h-screen w-[100%]">
-           <center> <p className="text-5xl p-[2%] animate-bounce"><b>LOGIN</b></p> </center>
+        <div className="bg-gradient-to-r from-orange-300 to-yellow-100 h-screen w-[100%]">
+           <center> <p className="text-5xl p-[2%] animate-bounce "><b>LOGIN</b></p> </center>
         <div className="bg-white w-[60%] h-[70%] absolute top-[40%] left-[20%] rounded-[50px]  shadow-2xl shadow-black">
 
                

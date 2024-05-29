@@ -19,7 +19,7 @@ export const About = () =>
                <br/><br/> <b className="text-4xl ml-[3%] ">About Petropolis</b>
                 <p className="text-2xl ml-[3%] pt-[75px]">At Petropolis, we're more than just a pet store - we're a community<br/> of pet lovers dedicated to providing the best for your furry friends.<br/><br/>
 
-                From premium pet foods to expert guidelines for pet parents,<br/> we've got everything you need to keep your pets happy and healthy.<br/><br/>
+                From premium pet grooming to expert guidelines for pet parents,<br/> we've got everything you need to keep your pets happy and healthy.<br/><br/>
 
 Join us in creating a paradise for pets, one wagging tail at a time!
 </p>
